@@ -1,49 +1,150 @@
 # Causal Modeling
 
-A practical learning repository for understanding and implementing **Causal Modeling**, **Causal Inference**, and **Causal AI** concepts using real-world retail and supply chain use cases.
+A practical learning repository for understanding and implementing causal modeling, causal inference, and causal AI concepts from fundamentals to advanced applications.
 
-This repository documents my learning journey as I explore:
-- Root Cause Analysis vs Causal Modeling
-- Causal Inference
-- Bayesian Statistics
-- A/B Testing
-- Uplift Modeling
-- Treatment Effect Estimation
-- Causal Graphs (DAGs)
-- Retail & Supply Chain Causal Use Cases
-- Python libraries for causal AI
+## Repository Purpose
 
-The goal is to build practical knowledge and eventually create production-ready causal intelligence systems for retail and supply chain domains.
+This repository documents my learning journey exploring causal modeling concepts and techniques. It serves as both a personal learning log and a reference guide built progressively as new concepts are learned.
 
 ---
 
-# Why Causal Modeling?
+## Why Causal Modeling?
 
-Traditional analytics answers:
+Traditional analytics answers: What happened?
+Machine Learning answers: What will happen?
+**Causal Modeling answers: What will happen IF we intentionally change something?**
 
-```text
-What happened?
-````
+This repository focuses on:
+- Cause vs correlation
+- Business interventions
+- Decision intelligence
+- Counterfactual reasoning
+- Treatment effects
+- Real-world applications in retail and supply chain
 
-Machine Learning answers:
+---
 
-```text
-What will happen?
+## Repository Structure
+
+```
+Casual-Modelling/
+├── README.md                 # This file
+├── notes/                    # Learning notes and concepts
+│   ├── 01_fundamentals/
+│   ├── 02_causal_inference/
+│   ├── 03_statistical_methods/
+│   ├── 04_advanced_techniques/
+│   └── 05_applications/
+├── notebooks/                # Jupyter notebooks with hands-on examples
+│   ├── 01_intro_to_causal_graphs.ipynb
+│   ├── 02_causal_inference_basics.ipynb
+│   └── ...
+├── code/                     # Implementation code and reusable functions
+│   ├── causal_graphs.py
+│   ├── inference.py
+│   └── utils.py
+├── data/                     # Sample datasets for experimentation
+│   ├── sample_retail_data.csv
+│   └── ...
+└── resources/                # External references, papers, links
+    └── references.md
 ```
 
-Causal Modeling answers:
+---
 
-```text
-What will happen IF we intentionally change something?
-```
+## Learning Path
 
-This repository focuses on understanding:
+### Phase 1: Fundamentals (Start Here)
+- Understanding causality vs correlation
+- Why causal modeling matters
+- Key concepts and terminology
+- Causal graphs and DAGs (Directed Acyclic Graphs)
 
-* Cause vs correlation
-* Business interventions
-* Decision intelligence
-* Counterfactual reasoning
-* Treatment effects
+### Phase 2: Causal Inference Basics
+- Do-calculus and causal calculus
+- Backdoor criterion
+- Front-door criterion
+- Confounder identification
+
+### Phase 3: Statistical Methods
+- Matching techniques
+- Stratification and adjustment
+- Propensity score methods
+- Instrumental variables
+
+### Phase 4: Advanced Techniques
+- Difference-in-differences
+- Synthetic control methods
+- Heterogeneous treatment effects
+- Double machine learning
+
+### Phase 5: Real-World Applications
+- Retail use cases
+- Supply chain optimization
+- A/B testing with causal inference
+- Uplift modeling
+
+### Phase 6: Production & Scale
+- Implementation best practices
+- Performance considerations
+- Integration with ML pipelines
+
+---
+
+## Getting Started
+
+1. Start with the [Use Case Context](notes/00_use_case_context.md) - L'Oreal India
+2. Read the [Fundamentals Index](notes/01_fundamentals/00_index.md) for learning path
+3. Follow along with Jupyter notebooks in `notebooks/`
+4. Implement concepts with code in `code/`
+5. Reference external materials in `resources/references.md`
+
+---
+
+## Fundamentals Notes (Complete)
+
+All foundational concepts with L'Oreal India examples:
+
+| # | Topic | Description |
+|---|-------|-------------|
+| 1 | [Correlation](notes/01_fundamentals/01_correlation.md) | How variables move together |
+| 2 | [Causation](notes/01_fundamentals/02_causation.md) | Does one variable cause another? |
+| 3 | [Correlation vs Causation](notes/01_fundamentals/03_correlation_vs_causation.md) | Key differences and traps |
+| 4 | [Confounders](notes/01_fundamentals/04_confounders.md) | Hidden variables creating false relationships |
+| 5 | [Counterfactuals](notes/01_fundamentals/05_counterfactuals.md) | What would have happened otherwise? |
+| 6 | [Treatment Effect](notes/01_fundamentals/06_treatment_effect.md) | ATE, ATT, CATE explained |
+| 7 | [Hypothesis Testing](notes/01_fundamentals/07_hypothesis_testing.md) | Statistical significance |
+| 8 | [A/B Testing](notes/01_fundamentals/08_ab_testing.md) | Experimentation gold standard |
+| 9 | [Bayesian Statistics](notes/01_fundamentals/09_bayesian_statistics.md) | Updating beliefs with evidence |
+| 10 | [DAGs](notes/01_fundamentals/10_dag.md) | Directed Acyclic Graphs |
+| 11 | [Root Cause vs Causal Modeling](notes/01_fundamentals/11_root_cause_vs_causal_modeling.md) | When to use which |
+| 12 | [Uplift Modeling](notes/01_fundamentals/12_uplift_modeling.md) | Incremental effect prediction |
+| 13 | [Selection Bias](notes/01_fundamentals/13_selection_bias.md) | Why groups differ systematically |
+| 14 | [Propensity Scores](notes/01_fundamentals/14_propensity_score.md) | Creating comparable groups |
+| 15 | [Structural Causal Models](notes/01_fundamentals/15_structural_causal_models.md) | Complete SCM framework |
+
+---
+
+## Topics to Explore
+
+- Root Cause Analysis vs Causal Modeling
+- Causal Inference frameworks
+- Bayesian statistics and causal models
+- A/B Testing and experimentation
+- Uplift Modeling
+- Treatment Effect Estimation
+- Causal Graphs and DAGs
+- Retail and Supply Chain Use Cases
+- Python libraries: CausalML, DoWhy, EconML, Causalimpact
+
+---
+
+## Repository Conventions
+
+- No emojis in notes or code
+- Commit messages are single-line only
+- Progressive learning: foundational concepts first, building to advanced topics
+- Each topic includes theory, examples, and hands-on notebooks
 
 ---
 
