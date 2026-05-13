@@ -139,14 +139,6 @@ All foundational concepts with L'Oreal India examples:
 
 ---
 
-## Repository Conventions
-
-- No emojis in notes or code
-- Commit messages are single-line only
-- Progressive learning: foundational concepts first, building to advanced topics
-- Each topic includes theory, examples, and hands-on notebooks
-
----
 
 # Real-World Use Cases
 
