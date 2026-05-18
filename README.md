@@ -125,6 +125,40 @@ All foundational concepts with L'Oreal India examples:
 
 ---
 
+## Notebooks
+
+Interactive Jupyter notebooks with L'Oreal India examples:
+
+| # | Notebook | Concept | Key Learning |
+|---|----------|---------|--------------|
+| 1 | [01_correlation_example.ipynb](notebooks/01_correlation_example.ipynb) | Correlation | Confounders inflate correlations |
+| 2 | [02_ab_testing_example.ipynb](notebooks/02_ab_testing_example.ipynb) | A/B Testing | Statistical significance and CI |
+| 3 | [03_propensity_score_matching.ipynb](notebooks/03_propensity_score_matching.ipynb) | PSM | Handle selection bias |
+| 4 | [04_uplift_modeling.ipynb](notebooks/04_uplift_modeling.ipynb) | Uplift | Find persuadable customers |
+
+### Quick Start
+
+```bash
+# Install dependencies
+pip install -r code/requirements.txt
+
+# Start Jupyter
+jupyter notebook notebooks/
+```
+
+### Python Scripts
+
+The same examples are also available as standalone Python scripts in [code/](code/):
+
+```bash
+python code/01_correlation_example.py
+python code/02_ab_testing_example.py
+python code/03_propensity_score_matching.py
+python code/04_uplift_modeling.py
+```
+
+---
+
 ## Topics to Explore
 
 - Root Cause Analysis vs Causal Modeling
